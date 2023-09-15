@@ -1,0 +1,122 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html body div.main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(214, 166, 45);
+  width: 100%;
+  height: 100%;
+}
+
+html body div.main h1 {
+  background-color: rgb(122, 92, 15);
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding: 30px;
+  margin-top: 0px;
+}
+
+html body div.main div.main-products {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+html body div.main div.main-products>div {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(233, 230, 38);
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 1s;
+}
+
+html body div.main div.main-products div:hover {
+  box-shadow: rgba(225, 248, 14, 0.959) 0px 5px 20px;
+}
+
+html body div.main div.main-products div:hover div.image {
+  display: none;
+}
+
+html body div.main div.main-products div:hover div.text {
+  display: block;
+}
+
+html body div.main div.main-products div div.image {
+  box-shadow: none;
+  /*width: 300px;
+  height: 300px;*/
+}
+
+html body div.main div.main-products div div.image img {
+  width: 300px;
+  height: 300px;
+}
+
+html body div.main div.main-products div div.text {
+  width: 300px;
+  height: 300px;
+  box-shadow: none;
+  border: 1px solid black;
+  font-size: 25px;
+  display: none;
+  word-wrap: break-word;
+
+}
+
+html body div.main #sortBtn {
+  align-self: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 100px;
+  background-color: rgb(214, 166, 45);
+  border: 1px solid rgb(225, 248, 14);
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+html body div.main #sortBtn:hover {
+  box-shadow: rgba(225, 248, 14, 0.959) 0px 5px 20px;
+}
+
+/*width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+
+    div.HelloReverse {
+        display: none;
+    }
+
+    transition: all 0.1s;
+
+    &:hover {
+        div.HelloReverse {
+            display: block;
+            transform: rotateY(180deg);
+        }
+
+        div.Hello {
+            display: none;
+        }
+
+        transform: rotateY(180deg);
+        background-color: chartreuse;
+    }*/
+
+/*# sourceMappingURL=style.css.map */
